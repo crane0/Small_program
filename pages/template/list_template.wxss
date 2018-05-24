@@ -2,6 +2,7 @@
 .template-container {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid #999;
 }
 .image-text image{
   width: 40rpx;
@@ -24,6 +25,7 @@
   font-size: 32rpx;
   vertical-align: middle;
   margin: 0 20rpx;
+  text-indent: 32rpx;
 }
 .love-read image{
   width: 40rpx;
