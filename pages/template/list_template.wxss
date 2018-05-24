@@ -1,0 +1,38 @@
+/* pages/list_template/list_template.wxss */
+.template-container {
+  display: flex;
+  flex-direction: column;
+}
+.image-text image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+  vertical-align: middle;
+}
+.image-text text{
+  font-size: 32rpx;
+  vertical-align: middle;
+}
+.title {
+  margin: 0 0 20rpx 20rpx;
+  font-weight: 700;
+}
+.titleImg {
+  height: 400rpx;
+  margin-bottom: 20rpx;
+}
+.content {
+  font-size: 32rpx;
+  vertical-align: middle;
+  margin: 0 20rpx;
+}
+.love-read image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+  vertical-align: middle;
+}
+.love-read text{
+  font-size: 32rpx;
+  vertical-align: middle;
+}

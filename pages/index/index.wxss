@@ -1,0 +1,33 @@
+/* pages/index/index.wxss */
+page {
+  width: 100%;
+  background: #C5EFEF
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .user-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  margin-top: 160rpx;
+}
+.container .user-name {
+  font-size: 32rpx;
+  margin-top: 150rpx;
+}
+.container .login-container{
+  width: 200rpx;
+  height: 80rpx;
+  margin-top: 300rpx;
+  border: 1rpx solid salmon;
+  text-align: center;
+  line-height: 80rpx;
+}
+.container .login-container text{
+  font-size: 32rpx;
+  color: #405f80;
+  font-weight: bold;
+  }

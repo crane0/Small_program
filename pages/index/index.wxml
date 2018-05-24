@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <!-- <image class='user-avatar' src='../images/avatar_middle.jpg'></image>  -->
+  <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
+  <text class='user-name'>{{userInfo.nickName}}</text>
+  <view class='login-container' bindtap='handleClick'>
+    <text>登 陆</text>
+  </view>
+  <!-- <button open-type="getUserInfo">获取头像等信息</button> -->
+</view>

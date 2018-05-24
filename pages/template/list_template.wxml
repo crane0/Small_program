@@ -1,0 +1,20 @@
+<!--pages/template/template.wxml-->
+<template name="list_template">
+  <view class="template-container">
+    <view class="image-text">
+      <image src="/images/avatar/0.png"/>
+      <text>sep 19 2018</text>
+    </view>
+
+    <text class="title">这是图片标题</text>
+    <image class="titleImg" src="/images/detail/carousel/02.jpg"/>
+    <text class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aperiam beatae, culpa debitis error hic iure laborum magnam natus, odio officia perspiciatis quas quia sequi soluta velit vero voluptatibus.</text>
+
+    <view class="love-read">
+      <image src="/images/icon/chat.png"/>
+      <text>88</text>
+      <image src="/images/icon/view.png"/>
+      <text>66</text>
+    </view>
+  </view>
+</template>
