@@ -6,9 +6,12 @@
       <text>sep 19 2018</text>
     </view>
 
-    <text class="title">这是图片标题</text>
-    <image class="titleImg" src="/images/detail/carousel/02.jpg"/>
-    <text class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aperiam beatae, culpa debitis error hic iure laborum magnam natus, odio officia perspiciatis quas quia sequi soluta velit vero voluptatibus.</text>
+    <text class="itemTitle">西蒙·海耶</text>
+    <image class="itemImg" src="/images/detail/carousel/02.jpg"/>
+    <text class="itemContent">
+      西蒙·海耶（Simo Häyhä，1905年12月17日—2002年4月1日），芬兰军人、著名狙击手，世界狙击之王，绰号“白色死神”（White Death）。
+      1939年—1940年的苏芬战争中，他在不到四个月的时间里，就用芬兰版的莫辛纳甘步枪射杀了542名苏军（生涯总狙杀705人），一举成为世界上杀敌最多的狙击手。
+    </text>
 
     <view class="love-read">
       <image src="/images/icon/chat.png"/>

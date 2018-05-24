@@ -13,15 +13,14 @@
   font-size: 32rpx;
   vertical-align: middle;
 }
-.title {
+.itemTitle {
   margin: 0 0 20rpx 20rpx;
   font-weight: 700;
 }
-.titleImg {
+.itemImg {
   height: 400rpx;
-  margin-bottom: 20rpx;
 }
-.content {
+.itemContent {
   font-size: 32rpx;
   vertical-align: middle;
   margin: 0 20rpx;
