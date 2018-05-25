@@ -1,13 +1,29 @@
 {
   "pages": [
     "pages/list/list",
+    "pages/movie/movie",
     "pages/index/index",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/movieDetail/movieDedail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FA8072",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      }
+    ]
   }
 }

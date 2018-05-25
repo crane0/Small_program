@@ -1,0 +1,36 @@
+/* pages/movie/movie.wxss */
+.movie-container {
+  display: flex;
+  padding: 20rpx;
+}
+
+.movie-container image {
+  width: 128rpx;
+  height: 128rpx;
+}
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 30rpx;
+}
+
+.introduce .movie {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.introduce .year {
+  color: #666666;
+  font-size: 32rpx;
+}
+
+.introduce .director {
+  color: #333333;
+}
+
+.rating {
+  color: red;
+}

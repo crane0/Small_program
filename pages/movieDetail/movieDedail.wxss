@@ -1,0 +1,44 @@
+/* pages/movieDetail/movieDedail.wxss */
+page {
+  width: 100%;
+  background: aliceblue;
+}
+
+.movieDetail-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+.movieDetail-container image {
+  height: 700rpx;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.movie-name {
+  margin: 20rpx auto 20rpx;
+  font-size: 42rpx;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-bottom: 20rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+}
+
+
+button {
+  background: seagreen;
+  width: 70%;
+  color: white;
+  height: 80rpx;
+  line-height: 80rpx;
+}
