@@ -15,4 +15,15 @@ Page({
       listArr: datas.list_data
     })
   },
+  toDetail (event) {
+    // console.log(event)
+    let index = event.currentTarget.dataset.index
+    // console.log(index)
+    wx.navigateTo({
+      url: '/pages/detail/detail?index='+index,
+      success() {
+        console.log('跳转成功')
+      }
+    })
+  },
 })

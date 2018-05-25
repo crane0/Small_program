@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail-container">
+  <image class="head-img" src="{{contentObj.headImgSrc}}"></image>
+  <view class="image-text">
+    <image src="/images/avatar/0.png"></image>
+    <text>{{contentObj.author}}</text>
+    <text>发布于</text>
+    <text>{{contentObj.date}}</text>
+  </view>
+  <text class="title">{{contentObj.title}}</text>
+  <view class="collect-line-container">
+    <view class="collect-container">
+      <image src="/images/icon/share.png"/>
+      <image catchtap="handleCollect" src="{{isCollected ? '/images/icon/collection.png' : '/images/icon/collection-anti.png'}}"/>
+    </view>
+    <view class='line'></view>
+  </view>
+  <button class="btn">发布文章</button>
+  <text class="content">{{contentObj.detail_content}}</text>
+</view>

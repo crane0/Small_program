@@ -8,6 +8,11 @@ Page({
     userInfo: {}
   },
   handleClick() {
+    /*
+    navigateTo，在跳转时，会保留当前页面，
+      也就是说，左上角会有回退按钮。
+    redirectTo，是直接替换，没有回退按钮
+    */ 
     wx.navigateTo({
       // wx.redirectTo({
       url: '/pages/list/list',

@@ -19,7 +19,7 @@
 
   <!--遍历时，(item,index)都是默认值，可以直接使用-->
   <block wx:for="{{listArr}}" wx:key="index">
-    <view>
+    <view data-index="{{index}}" catchtap="toDetail">
       <!--使用这样的方式，可以直接在template使用属性，而不是data.的形式-->
       <template is="list_template" data="{{...item}}"/>
     </view>

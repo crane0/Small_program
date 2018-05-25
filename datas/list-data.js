@@ -1,7 +1,7 @@
 let list_data = [
   {
     date: 'sep 19 2016',
-    title: '尚硅谷',
+    title: '弗拉基米尔',
     detail_img: '/images/detail/carousel/01.jpg',
     avatar: '/images/avatar/4.png',
     detail_content: '西蒙·海耶（Simo Häyhä，1905年12月17日—2002年4月1日），芬兰军人、著名狙击手，世界狙击之王，绰号“白色死神”（White Death）。\n' +
@@ -9,7 +9,7 @@ let list_data = [
     reading: '112',
     collection: '96',
     headImgSrc: '/images/detail/carousel/01.jpg',
-    author: '投影时代',
+    author: '弗拉基米尔',
     dataTime: '24time',
     detail_love_image1: '/images/icon/chat.png',
     detail_love_image2: '/images/icon/view.png',

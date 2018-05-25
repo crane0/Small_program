@@ -1,0 +1,65 @@
+/* pages/detail/detail.wxss */
+.detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-img {
+  width: 100%;
+  height: 400rpx;
+}
+
+.image-text {
+  padding: 20rpx;
+}
+
+.image-text image {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+
+.image-text text {
+  font-size: 32rpx;
+  vertical-align: middle;
+  margin-left: 10rpx;
+}
+
+.title {
+  margin-left: 20rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+}
+
+.collect-line-container {
+  position: relative;
+}
+
+.collect-container image{
+  float: right;
+  margin-right: 20rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.line {
+  position: absolute;
+  left: 45rpx;
+  top: 45rpx;
+  z-index: -1;
+  height: 1rpx;
+  width: 90%;
+  background-color: #405f80;
+}
+
+.btn {
+  font-size: 32rpx;
+  width: 200rpx;
+  margin-bottom: 20rpx;
+}
+
+.content {
+  margin: 0 20rpx;
+  font-size: 32rpx;
+  text-indent: 32rpx;
+}
