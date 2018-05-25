@@ -8,8 +8,7 @@
 
     <text class="itemTitle">西蒙·海耶</text>
     <image class="itemImg" src="{{detail_img}}"/>
-    <text class="itemContent">{{detail_content}}
-    </text>
+    <text class="itemContent">{{detail_content}}</text>
 
     <view class="love-read">
       <image src="{{detail_love_image1}}"/>

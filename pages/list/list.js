@@ -9,12 +9,15 @@ Page({
   },
   /**
    * 生命周期函数--监听页面加载
+   *
+   *  页面已加载，就要获取数据，进行填充
    */
   onLoad: function (options) {
     this.setData({
       listArr: datas.list_data
     })
   },
+  //去detail页面，
   toDetail (event) {
     let index = event.currentTarget.dataset.index
     wx.navigateTo({
@@ -27,7 +30,8 @@ Page({
 
   /*
   * 点击轮播图跳转
-  *   注意，要使用target，而不是currentTarget
+  *   对应的是轮播图（子元素），不是外部容器（父元素）
+  *   所以，要使用target，而不是currentTarget
   * */
   handleToDetail (event) {
     console.log(event)
