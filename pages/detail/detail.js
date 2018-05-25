@@ -1,5 +1,9 @@
 // pages/detail/detail.js
 let datas = require('../../datas/list-data')
+
+//获取小程序的实例（可以直接使用app.js中定义的属性，方法等）
+let appData = getApp()
+
 Page({
   /**
    * 页面的初始数据
@@ -7,8 +11,8 @@ Page({
   data: {
     contentObj: {},
     index: 0,
-    isCollected: false
-
+    isCollected: false,
+    isPlay: false
   },
 
   /**
@@ -23,12 +27,11 @@ Page({
       contentObj,
       index   //配合收藏功能使用
     })
-
     /*
     * 页面加载时，应该要读取到Storage中的内容，判断显示是否收藏
     * */
-    // 获取存储的数据，如果没有一个，就是{}，也就什么都不做
-    let obj = wx.getStorageSync('isCollected') || {};
+    // 获取存储的数据，如果没有一个，也就什么都不做
+    let obj = wx.getStorageSync('isCollected');
     if (obj) {
       //判断是否收藏当前页面
       let isCollected = obj[index];
@@ -39,6 +42,30 @@ Page({
         isCollected
       })
     }
+
+
+    let {isPlay, pageIndex} = appData.data
+    if (isPlay && pageIndex===index) {
+      this.setData({
+        isPlay: true
+      })
+    }
+
+    //监听音乐的播放
+    wx.onBackgroundAudioPlay(() => {
+      this.setData({
+        isPlay: true
+      })
+      appData.data.isPlay = true
+      appData.data.pageIndex = index
+    })
+    //监听音乐的暂停
+    wx.onBackgroundAudioPause(() => {
+      this.setData({
+        isPlay: false
+      })
+      appData.data.isPlay = false
+    })
   },
 
   handleCollect () {
@@ -71,4 +98,21 @@ Page({
       data: obj
     })
   },
+
+  handleMusic () {
+    const isPlay = !this.data.isPlay
+    this.setData({
+      isPlay
+    })
+
+    const {dataUrl,title} = this.data.contentObj.music
+    if (isPlay) {
+      wx.playBackgroundAudio({
+        title,
+        dataUrl
+      })
+    } else {
+      wx.pauseBackgroundAudio()
+    }
+  }
 })

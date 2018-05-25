@@ -1,6 +1,8 @@
 <!--pages/detail/detail.wxml-->
 <view class="detail-container">
-  <image class="head-img" src="{{contentObj.headImgSrc}}"></image>
+  <image class="head-img" src="{{isPlay ? '/images/music/xuwei.jpg' : contentObj.headImgSrc}}"></image>
+  <image class="music-img" catchtap="handleMusic"
+         src="{{isPlay ? '/images/music/music-stop.png' : '/images/music/music-start.png'}}"></image>
   <view class="image-text">
     <image src="/images/avatar/0.png"></image>
     <text>{{contentObj.author}}</text>
@@ -11,7 +13,8 @@
   <view class="collect-line-container">
     <view class="collect-container">
       <image src="/images/icon/share.png"/>
-      <image catchtap="handleCollect" src="{{isCollected ? '/images/icon/collection.png' : '/images/icon/collection-anti.png'}}"/>
+      <image catchtap="handleCollect"
+             src="{{isCollected ? '/images/icon/collection.png' : '/images/icon/collection-anti.png'}}"/>
     </view>
     <view class='line'></view>
   </view>

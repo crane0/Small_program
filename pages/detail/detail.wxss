@@ -63,3 +63,13 @@
   font-size: 32rpx;
   text-indent: 32rpx;
 }
+
+.music-img {
+  position: absolute;
+  width: 90rpx;
+  height: 90rpx;
+  left: 50%;
+  top: 200rpx;
+  margin-left: -45rpx;
+  margin-top: -45rpx;
+}
