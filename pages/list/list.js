@@ -16,9 +16,7 @@ Page({
     })
   },
   toDetail (event) {
-    // console.log(event)
     let index = event.currentTarget.dataset.index
-    // console.log(index)
     wx.navigateTo({
       url: '/pages/detail/detail?index='+index,
       success() {
@@ -26,4 +24,19 @@ Page({
       }
     })
   },
+
+  /*
+  * 点击轮播图跳转
+  *   注意，要使用target，而不是currentTarget
+  * */
+  handleToDetail (event) {
+    console.log(event)
+    let index = event.target.dataset.index
+    wx.navigateTo({
+      url: '/pages/detail/detail?index='+index,
+      success() {
+        console.log('跳转成功')
+      }
+    })
+  }
 })

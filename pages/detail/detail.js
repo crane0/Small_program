@@ -114,5 +114,15 @@ Page({
     } else {
       wx.pauseBackgroundAudio()
     }
+  },
+
+  //分享时，呼出操作菜单
+  handleShare () {
+    wx.showActionSheet({
+      itemList: [
+        '分享到朋友圈',
+        '发送给朋友'
+      ]
+    })
   }
 })
